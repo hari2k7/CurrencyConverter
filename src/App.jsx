@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import bgImg from './assets/bg.jpg'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 import { InputBox } from './components/index.js'
 
@@ -28,8 +27,7 @@ function App() {
     <div
       className='w-full min-h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat'
       style={{
-        backgroundImage: `url(${bgImg})`,
-        border: '5px solid red'
+        backgroundImage: "url('./bg.jpg')"
       }}
     >
       <div className='w-full'>
